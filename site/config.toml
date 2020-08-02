@@ -1,9 +1,147 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "My new Victor-Hugo site"
+title = "Dear Caroline, The Game"
 
 # RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
+# See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+theme = "hugo-strata-theme"
+disqusShortname = "dear caroline"
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = ""
+# Define how many posts should appear on a site
+paginate = 10
+
+[params]
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Dear Caroline, The Game"
+	description = "Dear Caroline's Game Site, devlog, and other stuff"
+
+	# Format dates with Go's time formatting
+	date_format = "2006-01-02"
+
+	# Add read time estimates in the format "X min read"
+	show_read_time = true
+
+	# Add custom assets with their paths relative to the static folder
+	custom_js   = []
+	custom_css  = []
+
+
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "avatar.jpg"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "**Dear Caroline** is a platformer where you explore an old man's house **with the only ability of dashing sideways** (no jumping)."
+		# The icons will be shown if you enter your username
+		twitter = "VZ96Daniel"
+
+		copyright = [
+		]
+
+
+	[params.about]
+		hide  = false
+		title = "Explore using your dashes against a hand-crafted environment."
+		content = "You are a hairy ball of dust trapped inside a wall. Suddenly you can move and dash. WTF is going on? Explore the house you have always inhabited and meet it's only occupant and his past, with hand-crafted visuals and carefully designed movement for your delight."
+
+
+	[params.portfolio]
+		hide  = false
+		title = "Concept Art"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+
+		[[params.portfolio.gallery]]
+			image = "fulls/06.gif"
+			thumb = "thumbs/06.gif"
+			title = "Gameplay."
+			description = "Basic gameplay loop."
+
+		[[params.portfolio.gallery]]
+			image = "fulls/05.jpg"
+			thumb = "thumbs/05.png"
+			title = "Dog concept art."
+			description = "Thought to be a medium/small sized dog (with no specific breed). Color between white and yellow"
+
+		[[params.portfolio.gallery]]
+			image = "fulls/04.jpg"
+			thumb = "thumbs/04.jpg"
+			title = "Old man concept."
+			description = "Drew the character holding a stop sign just for the sake of exploration (I think that this job can be visually appealing)."
+
+		[[params.portfolio.gallery]]
+			image = "fulls/03.jpg"
+			thumb = "thumbs/03.jpg"
+			title = "Chimney level concept art."
+			description = "Vertical level concept."
+
+		[[params.portfolio.gallery]]
+			image = "fulls/02.jpg"
+			thumb = "thumbs/02.jpg"
+			title = "Line art exploration."
+			description = "Exploration in terms of art supplies used for the line art: blue and black colored pencils (left) and black oil pastel (right)."
+
+		[[params.portfolio.gallery]]
+			image = "fulls/01.jpg"
+			thumb = "thumbs/01.jpg"
+			title = "Wall level concept art."
+			description = "Basic idea of the first level's orientation and elements."
+
+	[params.recentposts]
+		hide  = true
+		title = "Recent blog posts"
+
+	[params.contact]
+		hide  = false
+		title = "Get In Touch"
+		content = "Think this is a cool game idea? Want to talk about something? Just me up and I'll listen :)"
+
+		# This can be exact coordinates or a searchable address in google maps
+		gmaps_address = ""
+		address = [
+		]
+		phone = ""
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+		email = "dsvalenzuela@uc.cl"
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Name"
+			email = "Email"
+			message = "Message"
+			submit = "Send message"
+
+
+# Menu links that appear on the left sidebar
+[[menu.main]]
+	name = "Home"
+	url  = "/"
+	weight = 10
+
+[[menu.main]]
+	name = "About"
+	url  = "about"
+	weight = 5
+
+[[menu.main]]
+	name = "Blog"
+	url  = "post/"
+	weight = 0
