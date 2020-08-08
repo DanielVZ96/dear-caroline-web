@@ -9,7 +9,7 @@ title = "Dear Caroline, The Game"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 theme = "hugo-strata-theme"
-disqusShortname = "dear caroline"
+disqusShortname = "dear-caroline"
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = ""
 # Define how many posts should appear on a site

@@ -7,6 +7,7 @@ title = "About Us"
 +++
 
 # Who are we?
+
 ## Daniel Valenzuela
 I'm a history major and software engineer. Passionate about software, history and videogames. Currently working at admetricks and co-developing Dear Caroline.
 
